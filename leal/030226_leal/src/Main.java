@@ -1,5 +1,5 @@
 
-public class Herkes {
+public class  Main {
 
         public static void main(String[] args) {
 
