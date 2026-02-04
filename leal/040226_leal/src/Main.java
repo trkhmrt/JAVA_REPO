@@ -1,5 +1,6 @@
 
-public class RolKontrol {
+public class Main {
+
     static String rol = "admin";
 
     public static void main(String[] args) {
