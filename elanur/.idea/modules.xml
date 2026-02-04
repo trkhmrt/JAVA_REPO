@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/030226_ela/030226_ela.iml" filepath="$PROJECT_DIR$/030226_ela/030226_ela.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/elanur.iml" filepath="$PROJECT_DIR$/.idea/elanur.iml" />
+    </modules>
+  </component>
+</project>
