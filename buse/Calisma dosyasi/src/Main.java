@@ -10,8 +10,10 @@ void main() {
     }else {
     System.out.println("Kişi ehliyet alamaz.");
 }
-                } */
-    for (int i = 0; i < 10; i++) {
+                }
+    for (int i = 0; i < 48; i+=4) {
         System.out.println(i);
     }
-}
+} */
+
+
