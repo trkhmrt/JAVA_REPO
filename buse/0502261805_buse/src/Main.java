@@ -11,7 +11,7 @@ Sayı 0'dan küçük VEYA tek ise ekrana "Negatif veya Tek Sayı" yazmalı.
 Sayı 0 ise "Sıfır Girildi" yazmalı.
 Döngü sonunda, girilen tüm sayıların toplamını ekrana yazdırmalıdır." */
 
-    Scanner scanner = new Scanner(System.in);
+  /*  Scanner scanner = new Scanner(System.in);
     System.out.print("Kaç adet sayı gıreceksınız:");
     int adet = scanner.nextInt();
 
@@ -34,3 +34,57 @@ Döngü sonunda, girilen tüm sayıların toplamını ekrana yazdırmalıdır." 
     }
     System.out.println("Girilen sayıların toplamı: " + toplam);
     }
+     */
+
+/* Ödev 2: Sınıf Başarı Takibi ve Ortalama Hesaplama
+Amaç: Belirli aralıklardaki verileri filtrelemeyi (if-else if), mantıksal operatörleri ve döngü içinde veri biriktirerek matematiksel sonuç (ortalama) üretmeyi öğrenmek.
+
+Soru Metni:
+
+"Bir öğretmenin sınıfındaki öğrencilerin notlarını girmesini sağlayan bir simülasyon hazırlayınız.
+Program başında kullanıcıdan öğrenci sayısı alınmalıdır.
+for döngüsü ile her öğrencinin notu sırayla istenmelidir.
+Kontrol Mekanizması: Eğer girilen not 0-100 aralığı dışında ise "Hatalı not girdiniz" uyarısı vermeli ve bu notu ortalamaya dahil etmemelidir.
++Değerlendirme: > * Not 85 ve 100 arasındaysa "Takdir Alabilir",
++Not 50 ve üzerindeyse "Geçti",
++Not 50'den küçükse "Kaldı" mesajı verilmelidir.
+Sonuç: Programın sonunda sınıfın not ortalaması ekrana yazdırılmalıdır." */
+
+
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Öğrenci sayısını giriniz: ");
+    int adet = scanner.nextInt();
+
+    int toplam = 0;
+    int gecerliNotSayisi = 0;
+
+    for (int i = 0; i < adet; i++) {
+        System.out.print((i + 1) + ". öğrencinin notunu giriniz: ");
+        int not = scanner.nextInt();
+
+
+        if (not < 0 || not > 100) {
+            System.out.println("Hatalı not girdiniz");
+            continue;
+        }
+
+        toplam += not;
+        gecerliNotSayisi++;
+
+        if (not >= 85) {
+            System.out.println("Takdir Alabilir");
+        } else if (not >= 50) {
+            System.out.println("Geçti");
+        } else {
+            System.out.println("Kaldı");
+        }
+    }
+
+    if (gecerliNotSayisi > 0) {
+        double ortalama = (double) toplam / gecerliNotSayisi;
+        System.out.println("Sınıfın not ortalaması: " + ortalama);
+    } else {
+        System.out.println("Geçerli not girilmedi, ortalama hesaplanamadı.");
+    }
+}
