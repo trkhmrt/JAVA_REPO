@@ -1,6 +1,6 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
+/* void main() {
     /* Ödev 1: Sayı Analiz Makinesi
 Amaç: Temel döngü mantığını, kullanıcıdan veri almayı ve sayılar arasındaki mantıksal farkları (tek/çift, pozitif/negatif) kavramak.
 
@@ -50,7 +50,7 @@ Kontrol Mekanizması: Eğer girilen not 0-100 aralığı dışında ise "Hatalı
 +Not 50'den küçükse "Kaldı" mesajı verilmelidir.
 Sonuç: Programın sonunda sınıfın not ortalaması ekrana yazdırılmalıdır." */
 
-
+/*
     Scanner scanner = new Scanner(System.in);
 
     System.out.print("Öğrenci sayısını giriniz: ");
@@ -88,3 +88,4 @@ Sonuç: Programın sonunda sınıfın not ortalaması ekrana yazdırılmalıdır
         System.out.println("Geçerli not girilmedi, ortalama hesaplanamadı.");
     }
 }
+*/
