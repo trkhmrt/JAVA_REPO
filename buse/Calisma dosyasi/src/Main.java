@@ -121,6 +121,7 @@ Arrays.sort(sayılar);
     sayılar2[1] = 39;
     Arrays.sort(sayılar2);
     System.out.println("Sayılar Dizisi" + Arrays.toString(sayılar2));
+
 }
 
 
